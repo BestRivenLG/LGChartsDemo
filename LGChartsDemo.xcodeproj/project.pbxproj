@@ -54,13 +54,13 @@
 		01BC5B5A210EAD2700641D0D /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5B45210EAD2700641D0D /* UIView+Extension.m */; };
 		01BC5B5B210EAD2700641D0D /* NSString+DecimalNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5B46210EAD2700641D0D /* NSString+DecimalNumber.m */; };
 		01BC5B5C210EAD2700641D0D /* chartbg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 01BC5B47210EAD2700641D0D /* chartbg@3x.png */; };
-		01BC5B6B210EC01300641D0D /* LCPieView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5B60210EC01300641D0D /* LCPieView.m */; };
-		01BC5B6C210EC01300641D0D /* LCPieViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5B61210EC01300641D0D /* LCPieViewModel.m */; };
-		01BC5B6D210EC01300641D0D /* LCChartViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5B63210EC01300641D0D /* LCChartViewModel.m */; };
-		01BC5B6E210EC01300641D0D /* LCArcView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5B64210EC01300641D0D /* LCArcView.m */; };
-		01BC5B6F210EC01300641D0D /* LCMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5B66210EC01300641D0D /* LCMethod.m */; };
-		01BC5B70210EC01300641D0D /* LCChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5B6A210EC01300641D0D /* LCChartView.m */; };
-		01BC5B73210EC0F100641D0D /* UIView+LCLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5B71210EC0F100641D0D /* UIView+LCLayout.m */; };
+		01BC5B99210EE7EB00641D0D /* UIView+LCLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5B8B210EE7EB00641D0D /* UIView+LCLayout.m */; };
+		01BC5B9A210EE7EB00641D0D /* LCPieView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5B8D210EE7EB00641D0D /* LCPieView.m */; };
+		01BC5B9B210EE7EB00641D0D /* LCPieViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5B8E210EE7EB00641D0D /* LCPieViewModel.m */; };
+		01BC5B9C210EE7EB00641D0D /* LCChartViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5B90210EE7EB00641D0D /* LCChartViewModel.m */; };
+		01BC5B9D210EE7EB00641D0D /* LCArcView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5B91210EE7EB00641D0D /* LCArcView.m */; };
+		01BC5B9E210EE7EB00641D0D /* LCMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5B94210EE7EB00641D0D /* LCMethod.m */; };
+		01BC5B9F210EE7EB00641D0D /* LCChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5B98210EE7EB00641D0D /* LCChartView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -152,20 +152,20 @@
 		01BC5B45210EAD2700641D0D /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		01BC5B46210EAD2700641D0D /* NSString+DecimalNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DecimalNumber.m"; sourceTree = "<group>"; };
 		01BC5B47210EAD2700641D0D /* chartbg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chartbg@3x.png"; sourceTree = "<group>"; };
-		01BC5B5F210EC01300641D0D /* LCMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCMethod.h; sourceTree = "<group>"; };
-		01BC5B60210EC01300641D0D /* LCPieView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCPieView.m; sourceTree = "<group>"; };
-		01BC5B61210EC01300641D0D /* LCPieViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCPieViewModel.m; sourceTree = "<group>"; };
-		01BC5B62210EC01300641D0D /* LCChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCChartView.h; sourceTree = "<group>"; };
-		01BC5B63210EC01300641D0D /* LCChartViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCChartViewModel.m; sourceTree = "<group>"; };
-		01BC5B64210EC01300641D0D /* LCArcView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCArcView.m; sourceTree = "<group>"; };
-		01BC5B65210EC01300641D0D /* LCPieView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCPieView.h; sourceTree = "<group>"; };
-		01BC5B66210EC01300641D0D /* LCMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCMethod.m; sourceTree = "<group>"; };
-		01BC5B67210EC01300641D0D /* LCPieViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCPieViewModel.h; sourceTree = "<group>"; };
-		01BC5B68210EC01300641D0D /* LCArcView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCArcView.h; sourceTree = "<group>"; };
-		01BC5B69210EC01300641D0D /* LCChartViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCChartViewModel.h; sourceTree = "<group>"; };
-		01BC5B6A210EC01300641D0D /* LCChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCChartView.m; sourceTree = "<group>"; };
-		01BC5B71210EC0F100641D0D /* UIView+LCLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LCLayout.m"; sourceTree = "<group>"; };
-		01BC5B72210EC0F100641D0D /* UIView+LCLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LCLayout.h"; sourceTree = "<group>"; };
+		01BC5B8B210EE7EB00641D0D /* UIView+LCLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LCLayout.m"; sourceTree = "<group>"; };
+		01BC5B8C210EE7EB00641D0D /* LCMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCMethod.h; sourceTree = "<group>"; };
+		01BC5B8D210EE7EB00641D0D /* LCPieView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCPieView.m; sourceTree = "<group>"; };
+		01BC5B8E210EE7EB00641D0D /* LCPieViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCPieViewModel.m; sourceTree = "<group>"; };
+		01BC5B8F210EE7EB00641D0D /* LCChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCChartView.h; sourceTree = "<group>"; };
+		01BC5B90210EE7EB00641D0D /* LCChartViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCChartViewModel.m; sourceTree = "<group>"; };
+		01BC5B91210EE7EB00641D0D /* LCArcView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCArcView.m; sourceTree = "<group>"; };
+		01BC5B92210EE7EB00641D0D /* UIView+LCLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LCLayout.h"; sourceTree = "<group>"; };
+		01BC5B93210EE7EB00641D0D /* LCPieView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCPieView.h; sourceTree = "<group>"; };
+		01BC5B94210EE7EB00641D0D /* LCMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCMethod.m; sourceTree = "<group>"; };
+		01BC5B95210EE7EB00641D0D /* LCPieViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCPieViewModel.h; sourceTree = "<group>"; };
+		01BC5B96210EE7EB00641D0D /* LCArcView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCArcView.h; sourceTree = "<group>"; };
+		01BC5B97210EE7EB00641D0D /* LCChartViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCChartViewModel.h; sourceTree = "<group>"; };
+		01BC5B98210EE7EB00641D0D /* LCChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCChartView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,7 +198,7 @@
 		01BC5AC7210EA69200641D0D /* LGChartsDemo */ = {
 			isa = PBXGroup;
 			children = (
-				01BC5B5E210EC01300641D0D /* LCChartView */,
+				01BC5B8A210EE7EB00641D0D /* LCChartView */,
 				01BC5B1B210EAD2700641D0D /* ChartView */,
 				01BC5B13210EA8A200641D0D /* UICountingLabel */,
 				01BC5ADE210EA72D00641D0D /* PNChart */,
@@ -354,26 +354,25 @@
 			path = Tool;
 			sourceTree = "<group>";
 		};
-		01BC5B5E210EC01300641D0D /* LCChartView */ = {
+		01BC5B8A210EE7EB00641D0D /* LCChartView */ = {
 			isa = PBXGroup;
 			children = (
-				01BC5B72210EC0F100641D0D /* UIView+LCLayout.h */,
-				01BC5B71210EC0F100641D0D /* UIView+LCLayout.m */,
-				01BC5B5F210EC01300641D0D /* LCMethod.h */,
-				01BC5B60210EC01300641D0D /* LCPieView.m */,
-				01BC5B61210EC01300641D0D /* LCPieViewModel.m */,
-				01BC5B62210EC01300641D0D /* LCChartView.h */,
-				01BC5B63210EC01300641D0D /* LCChartViewModel.m */,
-				01BC5B64210EC01300641D0D /* LCArcView.m */,
-				01BC5B65210EC01300641D0D /* LCPieView.h */,
-				01BC5B66210EC01300641D0D /* LCMethod.m */,
-				01BC5B67210EC01300641D0D /* LCPieViewModel.h */,
-				01BC5B68210EC01300641D0D /* LCArcView.h */,
-				01BC5B69210EC01300641D0D /* LCChartViewModel.h */,
-				01BC5B6A210EC01300641D0D /* LCChartView.m */,
+				01BC5B8B210EE7EB00641D0D /* UIView+LCLayout.m */,
+				01BC5B8C210EE7EB00641D0D /* LCMethod.h */,
+				01BC5B8D210EE7EB00641D0D /* LCPieView.m */,
+				01BC5B8E210EE7EB00641D0D /* LCPieViewModel.m */,
+				01BC5B8F210EE7EB00641D0D /* LCChartView.h */,
+				01BC5B90210EE7EB00641D0D /* LCChartViewModel.m */,
+				01BC5B91210EE7EB00641D0D /* LCArcView.m */,
+				01BC5B92210EE7EB00641D0D /* UIView+LCLayout.h */,
+				01BC5B93210EE7EB00641D0D /* LCPieView.h */,
+				01BC5B94210EE7EB00641D0D /* LCMethod.m */,
+				01BC5B95210EE7EB00641D0D /* LCPieViewModel.h */,
+				01BC5B96210EE7EB00641D0D /* LCArcView.h */,
+				01BC5B97210EE7EB00641D0D /* LCChartViewModel.h */,
+				01BC5B98210EE7EB00641D0D /* LCChartView.m */,
 			);
-			name = LCChartView;
-			path = "../../../../Downloads/LCChartView-master/LCChartView/LCChartView";
+			path = LCChartView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -452,46 +451,46 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01BC5B70210EC01300641D0D /* LCChartView.m in Sources */,
+				01BC5B9C210EE7EB00641D0D /* LCChartViewModel.m in Sources */,
 				01BC5B53210EAD2700641D0D /* WWBarView.m in Sources */,
 				01BC5B09210EA72D00641D0D /* PNCircleChart.m in Sources */,
 				01BC5B0E210EA72D00641D0D /* PNColor.m in Sources */,
 				01BC5B0C210EA72D00641D0D /* PNPieChart.m in Sources */,
-				01BC5B6B210EC01300641D0D /* LCPieView.m in Sources */,
 				01BC5B49210EAD2700641D0D /* WWLineScrollView.m in Sources */,
+				01BC5B9F210EE7EB00641D0D /* LCChartView.m in Sources */,
 				01BC5B10210EA72D00641D0D /* PNBar.m in Sources */,
 				01BC5B0B210EA72D00641D0D /* PNLineChartDataItem.m in Sources */,
 				01BC5B0D210EA72D00641D0D /* PNRadarChart.m in Sources */,
 				01BC5B5A210EAD2700641D0D /* UIView+Extension.m in Sources */,
 				01BC5B4C210EAD2700641D0D /* WWLineChartView.m in Sources */,
+				01BC5B99210EE7EB00641D0D /* UIView+LCLayout.m in Sources */,
 				01BC5B08210EA72D00641D0D /* PNLineChart.m in Sources */,
 				01BC5B06210EA72D00641D0D /* PNGenericChart.m in Sources */,
 				01BC5B4E210EAD2700641D0D /* WWPieChartDataItem.m in Sources */,
 				01BC5B03210EA72D00641D0D /* PNChartLabel.m in Sources */,
-				01BC5B6F210EC01300641D0D /* LCMethod.m in Sources */,
 				01BC5B52210EAD2700641D0D /* WWBarChartItem.m in Sources */,
 				01BC5B0F210EA72D00641D0D /* PNScatterChartData.m in Sources */,
 				01BC5B5B210EAD2700641D0D /* NSString+DecimalNumber.m in Sources */,
 				01BC5B58210EAD2700641D0D /* UIImage+Extension.m in Sources */,
 				01BC5B51210EAD2700641D0D /* WWBarScrollView.m in Sources */,
 				01BC5B11210EA72D00641D0D /* PNScatterChart.m in Sources */,
+				01BC5B9B210EE7EB00641D0D /* LCPieViewModel.m in Sources */,
 				01BC5B05210EA72D00641D0D /* PNRadarChartDataItem.m in Sources */,
-				01BC5B6E210EC01300641D0D /* LCArcView.m in Sources */,
-				01BC5B73210EC0F100641D0D /* UIView+LCLayout.m in Sources */,
 				01BC5ACD210EA69200641D0D /* ViewController.m in Sources */,
+				01BC5B9E210EE7EB00641D0D /* LCMethod.m in Sources */,
 				01BC5B0A210EA72D00641D0D /* PNLineChartData.m in Sources */,
 				01BC5B54210EAD2700641D0D /* WWBarXAxisItem.m in Sources */,
 				01BC5AD8210EA69200641D0D /* main.m in Sources */,
 				01BC5B4A210EAD2700641D0D /* WWLineXAxisView.m in Sources */,
 				01BC5B4D210EAD2700641D0D /* WWPieCHartLayer.m in Sources */,
-				01BC5B6C210EC01300641D0D /* LCPieViewModel.m in Sources */,
 				01BC5B02210EA72D00641D0D /* PNPieChartDataItem.m in Sources */,
 				01BC5B4F210EAD2700641D0D /* WWPieChartView.m in Sources */,
+				01BC5B9A210EE7EB00641D0D /* LCPieView.m in Sources */,
 				01BC5B04210EA72D00641D0D /* PNScatterChartDataItem.m in Sources */,
-				01BC5B6D210EC01300641D0D /* LCChartViewModel.m in Sources */,
 				01BC5B1A210EA8A200641D0D /* UICountingLabel.m in Sources */,
 				01BC5B07210EA72D00641D0D /* PNBarChart.m in Sources */,
 				01BC5B57210EAD2700641D0D /* WWChartBackGroundView.m in Sources */,
+				01BC5B9D210EE7EB00641D0D /* LCArcView.m in Sources */,
 				01BC5B4B210EAD2700641D0D /* WWLineYAxisItem.m in Sources */,
 				01BC5B55210EAD2700641D0D /* WWXAxisView.m in Sources */,
 				01BC5B56210EAD2700641D0D /* WWChartEntity.m in Sources */,
