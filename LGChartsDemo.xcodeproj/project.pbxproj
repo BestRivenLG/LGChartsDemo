@@ -1,0 +1,693 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01BC5ACA210EA69200641D0D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5AC9210EA69200641D0D /* AppDelegate.m */; };
+		01BC5ACD210EA69200641D0D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5ACC210EA69200641D0D /* ViewController.m */; };
+		01BC5AD0210EA69200641D0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01BC5ACE210EA69200641D0D /* Main.storyboard */; };
+		01BC5AD2210EA69200641D0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01BC5AD1210EA69200641D0D /* Assets.xcassets */; };
+		01BC5AD5210EA69200641D0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01BC5AD3210EA69200641D0D /* LaunchScreen.storyboard */; };
+		01BC5AD8210EA69200641D0D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5AD7210EA69200641D0D /* main.m */; };
+		01BC5B02210EA72D00641D0D /* PNPieChartDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5AE1210EA72D00641D0D /* PNPieChartDataItem.m */; };
+		01BC5B03210EA72D00641D0D /* PNChartLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5AE6210EA72D00641D0D /* PNChartLabel.m */; };
+		01BC5B04210EA72D00641D0D /* PNScatterChartDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5AE8210EA72D00641D0D /* PNScatterChartDataItem.m */; };
+		01BC5B05210EA72D00641D0D /* PNRadarChartDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5AEA210EA72D00641D0D /* PNRadarChartDataItem.m */; };
+		01BC5B06210EA72D00641D0D /* PNGenericChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5AEB210EA72D00641D0D /* PNGenericChart.m */; };
+		01BC5B07210EA72D00641D0D /* PNBarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5AEC210EA72D00641D0D /* PNBarChart.m */; };
+		01BC5B08210EA72D00641D0D /* PNLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5AED210EA72D00641D0D /* PNLineChart.m */; };
+		01BC5B09210EA72D00641D0D /* PNCircleChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5AEE210EA72D00641D0D /* PNCircleChart.m */; };
+		01BC5B0A210EA72D00641D0D /* PNLineChartData.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5AEF210EA72D00641D0D /* PNLineChartData.m */; };
+		01BC5B0B210EA72D00641D0D /* PNLineChartDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5AF0210EA72D00641D0D /* PNLineChartDataItem.m */; };
+		01BC5B0C210EA72D00641D0D /* PNPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5AF2210EA72D00641D0D /* PNPieChart.m */; };
+		01BC5B0D210EA72D00641D0D /* PNRadarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5AF3210EA72D00641D0D /* PNRadarChart.m */; };
+		01BC5B0E210EA72D00641D0D /* PNColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5AF5210EA72D00641D0D /* PNColor.m */; };
+		01BC5B0F210EA72D00641D0D /* PNScatterChartData.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5AF6210EA72D00641D0D /* PNScatterChartData.m */; };
+		01BC5B10210EA72D00641D0D /* PNBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5AF7210EA72D00641D0D /* PNBar.m */; };
+		01BC5B11210EA72D00641D0D /* PNScatterChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5AFB210EA72D00641D0D /* PNScatterChart.m */; };
+		01BC5B12210EA72D00641D0D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 01BC5B01210EA72D00641D0D /* Info.plist */; };
+		01BC5B18210EA8A200641D0D /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 01BC5B14210EA8A200641D0D /* LICENSE */; };
+		01BC5B19210EA8A200641D0D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 01BC5B16210EA8A200641D0D /* README.md */; };
+		01BC5B1A210EA8A200641D0D /* UICountingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5B17210EA8A200641D0D /* UICountingLabel.m */; };
+		01BC5B48210EAD2700641D0D /* chartbg.png in Resources */ = {isa = PBXBuildFile; fileRef = 01BC5B1C210EAD2700641D0D /* chartbg.png */; };
+		01BC5B49210EAD2700641D0D /* WWLineScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5B20210EAD2700641D0D /* WWLineScrollView.m */; };
+		01BC5B4A210EAD2700641D0D /* WWLineXAxisView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5B22210EAD2700641D0D /* WWLineXAxisView.m */; };
+		01BC5B4B210EAD2700641D0D /* WWLineYAxisItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5B24210EAD2700641D0D /* WWLineYAxisItem.m */; };
+		01BC5B4C210EAD2700641D0D /* WWLineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5B25210EAD2700641D0D /* WWLineChartView.m */; };
+		01BC5B4D210EAD2700641D0D /* WWPieCHartLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5B2A210EAD2700641D0D /* WWPieCHartLayer.m */; };
+		01BC5B4E210EAD2700641D0D /* WWPieChartDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5B2B210EAD2700641D0D /* WWPieChartDataItem.m */; };
+		01BC5B4F210EAD2700641D0D /* WWPieChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5B2C210EAD2700641D0D /* WWPieChartView.m */; };
+		01BC5B50210EAD2700641D0D /* chartbg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 01BC5B2D210EAD2700641D0D /* chartbg@2x.png */; };
+		01BC5B51210EAD2700641D0D /* WWBarScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5B30210EAD2700641D0D /* WWBarScrollView.m */; };
+		01BC5B52210EAD2700641D0D /* WWBarChartItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5B33210EAD2700641D0D /* WWBarChartItem.m */; };
+		01BC5B53210EAD2700641D0D /* WWBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5B35210EAD2700641D0D /* WWBarView.m */; };
+		01BC5B54210EAD2700641D0D /* WWBarXAxisItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5B36210EAD2700641D0D /* WWBarXAxisItem.m */; };
+		01BC5B55210EAD2700641D0D /* WWXAxisView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5B3A210EAD2700641D0D /* WWXAxisView.m */; };
+		01BC5B56210EAD2700641D0D /* WWChartEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5B3B210EAD2700641D0D /* WWChartEntity.m */; };
+		01BC5B57210EAD2700641D0D /* WWChartBackGroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5B3D210EAD2700641D0D /* WWChartBackGroundView.m */; };
+		01BC5B58210EAD2700641D0D /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5B40210EAD2700641D0D /* UIImage+Extension.m */; };
+		01BC5B59210EAD2700641D0D /* WWTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5B43210EAD2700641D0D /* WWTool.m */; };
+		01BC5B5A210EAD2700641D0D /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5B45210EAD2700641D0D /* UIView+Extension.m */; };
+		01BC5B5B210EAD2700641D0D /* NSString+DecimalNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5B46210EAD2700641D0D /* NSString+DecimalNumber.m */; };
+		01BC5B5C210EAD2700641D0D /* chartbg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 01BC5B47210EAD2700641D0D /* chartbg@3x.png */; };
+		01BC5B6B210EC01300641D0D /* LCPieView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5B60210EC01300641D0D /* LCPieView.m */; };
+		01BC5B6C210EC01300641D0D /* LCPieViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5B61210EC01300641D0D /* LCPieViewModel.m */; };
+		01BC5B6D210EC01300641D0D /* LCChartViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5B63210EC01300641D0D /* LCChartViewModel.m */; };
+		01BC5B6E210EC01300641D0D /* LCArcView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5B64210EC01300641D0D /* LCArcView.m */; };
+		01BC5B6F210EC01300641D0D /* LCMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5B66210EC01300641D0D /* LCMethod.m */; };
+		01BC5B70210EC01300641D0D /* LCChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5B6A210EC01300641D0D /* LCChartView.m */; };
+		01BC5B73210EC0F100641D0D /* UIView+LCLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC5B71210EC0F100641D0D /* UIView+LCLayout.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		01BC5AC5210EA69200641D0D /* LGChartsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LGChartsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		01BC5AC8210EA69200641D0D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		01BC5AC9210EA69200641D0D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		01BC5ACB210EA69200641D0D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		01BC5ACC210EA69200641D0D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		01BC5ACF210EA69200641D0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		01BC5AD1210EA69200641D0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		01BC5AD4210EA69200641D0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		01BC5AD6210EA69200641D0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01BC5AD7210EA69200641D0D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		01BC5ADF210EA72D00641D0D /* PNChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNChart.h; sourceTree = "<group>"; };
+		01BC5AE0210EA72D00641D0D /* PNPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNPieChart.h; sourceTree = "<group>"; };
+		01BC5AE1210EA72D00641D0D /* PNPieChartDataItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNPieChartDataItem.m; sourceTree = "<group>"; };
+		01BC5AE2210EA72D00641D0D /* PNLineChartDataItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNLineChartDataItem.h; sourceTree = "<group>"; };
+		01BC5AE3210EA72D00641D0D /* PNBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNBar.h; sourceTree = "<group>"; };
+		01BC5AE4210EA72D00641D0D /* PNScatterChartData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNScatterChartData.h; sourceTree = "<group>"; };
+		01BC5AE5210EA72D00641D0D /* PNColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNColor.h; sourceTree = "<group>"; };
+		01BC5AE6210EA72D00641D0D /* PNChartLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNChartLabel.m; sourceTree = "<group>"; };
+		01BC5AE7210EA72D00641D0D /* PNRadarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNRadarChart.h; sourceTree = "<group>"; };
+		01BC5AE8210EA72D00641D0D /* PNScatterChartDataItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNScatterChartDataItem.m; sourceTree = "<group>"; };
+		01BC5AE9210EA72D00641D0D /* PNScatterChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNScatterChart.h; sourceTree = "<group>"; };
+		01BC5AEA210EA72D00641D0D /* PNRadarChartDataItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNRadarChartDataItem.m; sourceTree = "<group>"; };
+		01BC5AEB210EA72D00641D0D /* PNGenericChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNGenericChart.m; sourceTree = "<group>"; };
+		01BC5AEC210EA72D00641D0D /* PNBarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNBarChart.m; sourceTree = "<group>"; };
+		01BC5AED210EA72D00641D0D /* PNLineChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNLineChart.m; sourceTree = "<group>"; };
+		01BC5AEE210EA72D00641D0D /* PNCircleChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNCircleChart.m; sourceTree = "<group>"; };
+		01BC5AEF210EA72D00641D0D /* PNLineChartData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNLineChartData.m; sourceTree = "<group>"; };
+		01BC5AF0210EA72D00641D0D /* PNLineChartDataItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNLineChartDataItem.m; sourceTree = "<group>"; };
+		01BC5AF1210EA72D00641D0D /* PNPieChartDataItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNPieChartDataItem.h; sourceTree = "<group>"; };
+		01BC5AF2210EA72D00641D0D /* PNPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNPieChart.m; sourceTree = "<group>"; };
+		01BC5AF3210EA72D00641D0D /* PNRadarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNRadarChart.m; sourceTree = "<group>"; };
+		01BC5AF4210EA72D00641D0D /* PNChartLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNChartLabel.h; sourceTree = "<group>"; };
+		01BC5AF5210EA72D00641D0D /* PNColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNColor.m; sourceTree = "<group>"; };
+		01BC5AF6210EA72D00641D0D /* PNScatterChartData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNScatterChartData.m; sourceTree = "<group>"; };
+		01BC5AF7210EA72D00641D0D /* PNBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNBar.m; sourceTree = "<group>"; };
+		01BC5AF8210EA72D00641D0D /* PNBarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNBarChart.h; sourceTree = "<group>"; };
+		01BC5AF9210EA72D00641D0D /* PNGenericChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNGenericChart.h; sourceTree = "<group>"; };
+		01BC5AFA210EA72D00641D0D /* PNRadarChartDataItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNRadarChartDataItem.h; sourceTree = "<group>"; };
+		01BC5AFB210EA72D00641D0D /* PNScatterChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNScatterChart.m; sourceTree = "<group>"; };
+		01BC5AFC210EA72D00641D0D /* PNChartDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNChartDelegate.h; sourceTree = "<group>"; };
+		01BC5AFD210EA72D00641D0D /* PNScatterChartDataItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNScatterChartDataItem.h; sourceTree = "<group>"; };
+		01BC5AFE210EA72D00641D0D /* PNLineChartData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNLineChartData.h; sourceTree = "<group>"; };
+		01BC5AFF210EA72D00641D0D /* PNCircleChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNCircleChart.h; sourceTree = "<group>"; };
+		01BC5B00210EA72D00641D0D /* PNLineChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNLineChart.h; sourceTree = "<group>"; };
+		01BC5B01210EA72D00641D0D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01BC5B14210EA8A200641D0D /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		01BC5B15210EA8A200641D0D /* UICountingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICountingLabel.h; sourceTree = "<group>"; };
+		01BC5B16210EA8A200641D0D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		01BC5B17210EA8A200641D0D /* UICountingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICountingLabel.m; sourceTree = "<group>"; };
+		01BC5B1C210EAD2700641D0D /* chartbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chartbg.png; sourceTree = "<group>"; };
+		01BC5B1E210EAD2700641D0D /* WWLineXAxisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWLineXAxisView.h; sourceTree = "<group>"; };
+		01BC5B1F210EAD2700641D0D /* WWLineYAxisItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWLineYAxisItem.h; sourceTree = "<group>"; };
+		01BC5B20210EAD2700641D0D /* WWLineScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWLineScrollView.m; sourceTree = "<group>"; };
+		01BC5B21210EAD2700641D0D /* WWLineChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWLineChartView.h; sourceTree = "<group>"; };
+		01BC5B22210EAD2700641D0D /* WWLineXAxisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWLineXAxisView.m; sourceTree = "<group>"; };
+		01BC5B23210EAD2700641D0D /* WWLineScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWLineScrollView.h; sourceTree = "<group>"; };
+		01BC5B24210EAD2700641D0D /* WWLineYAxisItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWLineYAxisItem.m; sourceTree = "<group>"; };
+		01BC5B25210EAD2700641D0D /* WWLineChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWLineChartView.m; sourceTree = "<group>"; };
+		01BC5B27210EAD2700641D0D /* WWPieCHartLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWPieCHartLayer.h; sourceTree = "<group>"; };
+		01BC5B28210EAD2700641D0D /* WWPieChartDataItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWPieChartDataItem.h; sourceTree = "<group>"; };
+		01BC5B29210EAD2700641D0D /* WWPieChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWPieChartView.h; sourceTree = "<group>"; };
+		01BC5B2A210EAD2700641D0D /* WWPieCHartLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWPieCHartLayer.m; sourceTree = "<group>"; };
+		01BC5B2B210EAD2700641D0D /* WWPieChartDataItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWPieChartDataItem.m; sourceTree = "<group>"; };
+		01BC5B2C210EAD2700641D0D /* WWPieChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWPieChartView.m; sourceTree = "<group>"; };
+		01BC5B2D210EAD2700641D0D /* chartbg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chartbg@2x.png"; sourceTree = "<group>"; };
+		01BC5B2F210EAD2700641D0D /* WWBarChartItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWBarChartItem.h; sourceTree = "<group>"; };
+		01BC5B30210EAD2700641D0D /* WWBarScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWBarScrollView.m; sourceTree = "<group>"; };
+		01BC5B31210EAD2700641D0D /* WWBarXAxisItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWBarXAxisItem.h; sourceTree = "<group>"; };
+		01BC5B32210EAD2700641D0D /* WWBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWBarView.h; sourceTree = "<group>"; };
+		01BC5B33210EAD2700641D0D /* WWBarChartItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWBarChartItem.m; sourceTree = "<group>"; };
+		01BC5B34210EAD2700641D0D /* WWBarScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWBarScrollView.h; sourceTree = "<group>"; };
+		01BC5B35210EAD2700641D0D /* WWBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWBarView.m; sourceTree = "<group>"; };
+		01BC5B36210EAD2700641D0D /* WWBarXAxisItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWBarXAxisItem.m; sourceTree = "<group>"; };
+		01BC5B38210EAD2700641D0D /* WWChartEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWChartEntity.h; sourceTree = "<group>"; };
+		01BC5B39210EAD2700641D0D /* WWChartBackGroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWChartBackGroundView.h; sourceTree = "<group>"; };
+		01BC5B3A210EAD2700641D0D /* WWXAxisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWXAxisView.m; sourceTree = "<group>"; };
+		01BC5B3B210EAD2700641D0D /* WWChartEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWChartEntity.m; sourceTree = "<group>"; };
+		01BC5B3C210EAD2700641D0D /* WWXAxisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWXAxisView.h; sourceTree = "<group>"; };
+		01BC5B3D210EAD2700641D0D /* WWChartBackGroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWChartBackGroundView.m; sourceTree = "<group>"; };
+		01BC5B3F210EAD2700641D0D /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		01BC5B40210EAD2700641D0D /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		01BC5B41210EAD2700641D0D /* WWTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWTool.h; sourceTree = "<group>"; };
+		01BC5B42210EAD2700641D0D /* NSString+DecimalNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DecimalNumber.h"; sourceTree = "<group>"; };
+		01BC5B43210EAD2700641D0D /* WWTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWTool.m; sourceTree = "<group>"; };
+		01BC5B44210EAD2700641D0D /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		01BC5B45210EAD2700641D0D /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		01BC5B46210EAD2700641D0D /* NSString+DecimalNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DecimalNumber.m"; sourceTree = "<group>"; };
+		01BC5B47210EAD2700641D0D /* chartbg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chartbg@3x.png"; sourceTree = "<group>"; };
+		01BC5B5F210EC01300641D0D /* LCMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCMethod.h; sourceTree = "<group>"; };
+		01BC5B60210EC01300641D0D /* LCPieView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCPieView.m; sourceTree = "<group>"; };
+		01BC5B61210EC01300641D0D /* LCPieViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCPieViewModel.m; sourceTree = "<group>"; };
+		01BC5B62210EC01300641D0D /* LCChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCChartView.h; sourceTree = "<group>"; };
+		01BC5B63210EC01300641D0D /* LCChartViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCChartViewModel.m; sourceTree = "<group>"; };
+		01BC5B64210EC01300641D0D /* LCArcView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCArcView.m; sourceTree = "<group>"; };
+		01BC5B65210EC01300641D0D /* LCPieView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCPieView.h; sourceTree = "<group>"; };
+		01BC5B66210EC01300641D0D /* LCMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCMethod.m; sourceTree = "<group>"; };
+		01BC5B67210EC01300641D0D /* LCPieViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCPieViewModel.h; sourceTree = "<group>"; };
+		01BC5B68210EC01300641D0D /* LCArcView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCArcView.h; sourceTree = "<group>"; };
+		01BC5B69210EC01300641D0D /* LCChartViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCChartViewModel.h; sourceTree = "<group>"; };
+		01BC5B6A210EC01300641D0D /* LCChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCChartView.m; sourceTree = "<group>"; };
+		01BC5B71210EC0F100641D0D /* UIView+LCLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LCLayout.m"; sourceTree = "<group>"; };
+		01BC5B72210EC0F100641D0D /* UIView+LCLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LCLayout.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01BC5AC2210EA69200641D0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01BC5ABC210EA69200641D0D = {
+			isa = PBXGroup;
+			children = (
+				01BC5AC7210EA69200641D0D /* LGChartsDemo */,
+				01BC5AC6210EA69200641D0D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		01BC5AC6210EA69200641D0D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01BC5AC5210EA69200641D0D /* LGChartsDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01BC5AC7210EA69200641D0D /* LGChartsDemo */ = {
+			isa = PBXGroup;
+			children = (
+				01BC5B5E210EC01300641D0D /* LCChartView */,
+				01BC5B1B210EAD2700641D0D /* ChartView */,
+				01BC5B13210EA8A200641D0D /* UICountingLabel */,
+				01BC5ADE210EA72D00641D0D /* PNChart */,
+				01BC5AC8210EA69200641D0D /* AppDelegate.h */,
+				01BC5AC9210EA69200641D0D /* AppDelegate.m */,
+				01BC5ACB210EA69200641D0D /* ViewController.h */,
+				01BC5ACC210EA69200641D0D /* ViewController.m */,
+				01BC5ACE210EA69200641D0D /* Main.storyboard */,
+				01BC5AD1210EA69200641D0D /* Assets.xcassets */,
+				01BC5AD3210EA69200641D0D /* LaunchScreen.storyboard */,
+				01BC5AD6210EA69200641D0D /* Info.plist */,
+				01BC5AD7210EA69200641D0D /* main.m */,
+			);
+			path = LGChartsDemo;
+			sourceTree = "<group>";
+		};
+		01BC5ADE210EA72D00641D0D /* PNChart */ = {
+			isa = PBXGroup;
+			children = (
+				01BC5ADF210EA72D00641D0D /* PNChart.h */,
+				01BC5AE0210EA72D00641D0D /* PNPieChart.h */,
+				01BC5AE1210EA72D00641D0D /* PNPieChartDataItem.m */,
+				01BC5AE2210EA72D00641D0D /* PNLineChartDataItem.h */,
+				01BC5AE3210EA72D00641D0D /* PNBar.h */,
+				01BC5AE4210EA72D00641D0D /* PNScatterChartData.h */,
+				01BC5AE5210EA72D00641D0D /* PNColor.h */,
+				01BC5AE6210EA72D00641D0D /* PNChartLabel.m */,
+				01BC5AE7210EA72D00641D0D /* PNRadarChart.h */,
+				01BC5AE8210EA72D00641D0D /* PNScatterChartDataItem.m */,
+				01BC5AE9210EA72D00641D0D /* PNScatterChart.h */,
+				01BC5AEA210EA72D00641D0D /* PNRadarChartDataItem.m */,
+				01BC5AEB210EA72D00641D0D /* PNGenericChart.m */,
+				01BC5AEC210EA72D00641D0D /* PNBarChart.m */,
+				01BC5AED210EA72D00641D0D /* PNLineChart.m */,
+				01BC5AEE210EA72D00641D0D /* PNCircleChart.m */,
+				01BC5AEF210EA72D00641D0D /* PNLineChartData.m */,
+				01BC5AF0210EA72D00641D0D /* PNLineChartDataItem.m */,
+				01BC5AF1210EA72D00641D0D /* PNPieChartDataItem.h */,
+				01BC5AF2210EA72D00641D0D /* PNPieChart.m */,
+				01BC5AF3210EA72D00641D0D /* PNRadarChart.m */,
+				01BC5AF4210EA72D00641D0D /* PNChartLabel.h */,
+				01BC5AF5210EA72D00641D0D /* PNColor.m */,
+				01BC5AF6210EA72D00641D0D /* PNScatterChartData.m */,
+				01BC5AF7210EA72D00641D0D /* PNBar.m */,
+				01BC5AF8210EA72D00641D0D /* PNBarChart.h */,
+				01BC5AF9210EA72D00641D0D /* PNGenericChart.h */,
+				01BC5AFA210EA72D00641D0D /* PNRadarChartDataItem.h */,
+				01BC5AFB210EA72D00641D0D /* PNScatterChart.m */,
+				01BC5AFC210EA72D00641D0D /* PNChartDelegate.h */,
+				01BC5AFD210EA72D00641D0D /* PNScatterChartDataItem.h */,
+				01BC5AFE210EA72D00641D0D /* PNLineChartData.h */,
+				01BC5AFF210EA72D00641D0D /* PNCircleChart.h */,
+				01BC5B00210EA72D00641D0D /* PNLineChart.h */,
+				01BC5B01210EA72D00641D0D /* Info.plist */,
+			);
+			path = PNChart;
+			sourceTree = "<group>";
+		};
+		01BC5B13210EA8A200641D0D /* UICountingLabel */ = {
+			isa = PBXGroup;
+			children = (
+				01BC5B14210EA8A200641D0D /* LICENSE */,
+				01BC5B15210EA8A200641D0D /* UICountingLabel.h */,
+				01BC5B16210EA8A200641D0D /* README.md */,
+				01BC5B17210EA8A200641D0D /* UICountingLabel.m */,
+			);
+			path = UICountingLabel;
+			sourceTree = "<group>";
+		};
+		01BC5B1B210EAD2700641D0D /* ChartView */ = {
+			isa = PBXGroup;
+			children = (
+				01BC5B1C210EAD2700641D0D /* chartbg.png */,
+				01BC5B1D210EAD2700641D0D /* LineChartView */,
+				01BC5B26210EAD2700641D0D /* Pie */,
+				01BC5B2D210EAD2700641D0D /* chartbg@2x.png */,
+				01BC5B2E210EAD2700641D0D /* Bar */,
+				01BC5B37210EAD2700641D0D /* Base */,
+				01BC5B3E210EAD2700641D0D /* Tool */,
+				01BC5B47210EAD2700641D0D /* chartbg@3x.png */,
+			);
+			path = ChartView;
+			sourceTree = "<group>";
+		};
+		01BC5B1D210EAD2700641D0D /* LineChartView */ = {
+			isa = PBXGroup;
+			children = (
+				01BC5B1E210EAD2700641D0D /* WWLineXAxisView.h */,
+				01BC5B1F210EAD2700641D0D /* WWLineYAxisItem.h */,
+				01BC5B20210EAD2700641D0D /* WWLineScrollView.m */,
+				01BC5B21210EAD2700641D0D /* WWLineChartView.h */,
+				01BC5B22210EAD2700641D0D /* WWLineXAxisView.m */,
+				01BC5B23210EAD2700641D0D /* WWLineScrollView.h */,
+				01BC5B24210EAD2700641D0D /* WWLineYAxisItem.m */,
+				01BC5B25210EAD2700641D0D /* WWLineChartView.m */,
+			);
+			path = LineChartView;
+			sourceTree = "<group>";
+		};
+		01BC5B26210EAD2700641D0D /* Pie */ = {
+			isa = PBXGroup;
+			children = (
+				01BC5B27210EAD2700641D0D /* WWPieCHartLayer.h */,
+				01BC5B28210EAD2700641D0D /* WWPieChartDataItem.h */,
+				01BC5B29210EAD2700641D0D /* WWPieChartView.h */,
+				01BC5B2A210EAD2700641D0D /* WWPieCHartLayer.m */,
+				01BC5B2B210EAD2700641D0D /* WWPieChartDataItem.m */,
+				01BC5B2C210EAD2700641D0D /* WWPieChartView.m */,
+			);
+			path = Pie;
+			sourceTree = "<group>";
+		};
+		01BC5B2E210EAD2700641D0D /* Bar */ = {
+			isa = PBXGroup;
+			children = (
+				01BC5B2F210EAD2700641D0D /* WWBarChartItem.h */,
+				01BC5B30210EAD2700641D0D /* WWBarScrollView.m */,
+				01BC5B31210EAD2700641D0D /* WWBarXAxisItem.h */,
+				01BC5B32210EAD2700641D0D /* WWBarView.h */,
+				01BC5B33210EAD2700641D0D /* WWBarChartItem.m */,
+				01BC5B34210EAD2700641D0D /* WWBarScrollView.h */,
+				01BC5B35210EAD2700641D0D /* WWBarView.m */,
+				01BC5B36210EAD2700641D0D /* WWBarXAxisItem.m */,
+			);
+			path = Bar;
+			sourceTree = "<group>";
+		};
+		01BC5B37210EAD2700641D0D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				01BC5B38210EAD2700641D0D /* WWChartEntity.h */,
+				01BC5B39210EAD2700641D0D /* WWChartBackGroundView.h */,
+				01BC5B3A210EAD2700641D0D /* WWXAxisView.m */,
+				01BC5B3B210EAD2700641D0D /* WWChartEntity.m */,
+				01BC5B3C210EAD2700641D0D /* WWXAxisView.h */,
+				01BC5B3D210EAD2700641D0D /* WWChartBackGroundView.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		01BC5B3E210EAD2700641D0D /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				01BC5B3F210EAD2700641D0D /* UIView+Extension.h */,
+				01BC5B40210EAD2700641D0D /* UIImage+Extension.m */,
+				01BC5B41210EAD2700641D0D /* WWTool.h */,
+				01BC5B42210EAD2700641D0D /* NSString+DecimalNumber.h */,
+				01BC5B43210EAD2700641D0D /* WWTool.m */,
+				01BC5B44210EAD2700641D0D /* UIImage+Extension.h */,
+				01BC5B45210EAD2700641D0D /* UIView+Extension.m */,
+				01BC5B46210EAD2700641D0D /* NSString+DecimalNumber.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		01BC5B5E210EC01300641D0D /* LCChartView */ = {
+			isa = PBXGroup;
+			children = (
+				01BC5B72210EC0F100641D0D /* UIView+LCLayout.h */,
+				01BC5B71210EC0F100641D0D /* UIView+LCLayout.m */,
+				01BC5B5F210EC01300641D0D /* LCMethod.h */,
+				01BC5B60210EC01300641D0D /* LCPieView.m */,
+				01BC5B61210EC01300641D0D /* LCPieViewModel.m */,
+				01BC5B62210EC01300641D0D /* LCChartView.h */,
+				01BC5B63210EC01300641D0D /* LCChartViewModel.m */,
+				01BC5B64210EC01300641D0D /* LCArcView.m */,
+				01BC5B65210EC01300641D0D /* LCPieView.h */,
+				01BC5B66210EC01300641D0D /* LCMethod.m */,
+				01BC5B67210EC01300641D0D /* LCPieViewModel.h */,
+				01BC5B68210EC01300641D0D /* LCArcView.h */,
+				01BC5B69210EC01300641D0D /* LCChartViewModel.h */,
+				01BC5B6A210EC01300641D0D /* LCChartView.m */,
+			);
+			name = LCChartView;
+			path = "../../../../Downloads/LCChartView-master/LCChartView/LCChartView";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01BC5AC4210EA69200641D0D /* LGChartsDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01BC5ADB210EA69200641D0D /* Build configuration list for PBXNativeTarget "LGChartsDemo" */;
+			buildPhases = (
+				01BC5AC1210EA69200641D0D /* Sources */,
+				01BC5AC2210EA69200641D0D /* Frameworks */,
+				01BC5AC3210EA69200641D0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LGChartsDemo;
+			productName = LGChartsDemo;
+			productReference = 01BC5AC5210EA69200641D0D /* LGChartsDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		01BC5ABD210EA69200641D0D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "liangang zhan";
+				TargetAttributes = {
+					01BC5AC4210EA69200641D0D = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 01BC5AC0210EA69200641D0D /* Build configuration list for PBXProject "LGChartsDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 01BC5ABC210EA69200641D0D;
+			productRefGroup = 01BC5AC6210EA69200641D0D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01BC5AC4210EA69200641D0D /* LGChartsDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		01BC5AC3210EA69200641D0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01BC5B19210EA8A200641D0D /* README.md in Resources */,
+				01BC5B12210EA72D00641D0D /* Info.plist in Resources */,
+				01BC5B48210EAD2700641D0D /* chartbg.png in Resources */,
+				01BC5AD5210EA69200641D0D /* LaunchScreen.storyboard in Resources */,
+				01BC5AD2210EA69200641D0D /* Assets.xcassets in Resources */,
+				01BC5B5C210EAD2700641D0D /* chartbg@3x.png in Resources */,
+				01BC5AD0210EA69200641D0D /* Main.storyboard in Resources */,
+				01BC5B50210EAD2700641D0D /* chartbg@2x.png in Resources */,
+				01BC5B18210EA8A200641D0D /* LICENSE in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01BC5AC1210EA69200641D0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01BC5B70210EC01300641D0D /* LCChartView.m in Sources */,
+				01BC5B53210EAD2700641D0D /* WWBarView.m in Sources */,
+				01BC5B09210EA72D00641D0D /* PNCircleChart.m in Sources */,
+				01BC5B0E210EA72D00641D0D /* PNColor.m in Sources */,
+				01BC5B0C210EA72D00641D0D /* PNPieChart.m in Sources */,
+				01BC5B6B210EC01300641D0D /* LCPieView.m in Sources */,
+				01BC5B49210EAD2700641D0D /* WWLineScrollView.m in Sources */,
+				01BC5B10210EA72D00641D0D /* PNBar.m in Sources */,
+				01BC5B0B210EA72D00641D0D /* PNLineChartDataItem.m in Sources */,
+				01BC5B0D210EA72D00641D0D /* PNRadarChart.m in Sources */,
+				01BC5B5A210EAD2700641D0D /* UIView+Extension.m in Sources */,
+				01BC5B4C210EAD2700641D0D /* WWLineChartView.m in Sources */,
+				01BC5B08210EA72D00641D0D /* PNLineChart.m in Sources */,
+				01BC5B06210EA72D00641D0D /* PNGenericChart.m in Sources */,
+				01BC5B4E210EAD2700641D0D /* WWPieChartDataItem.m in Sources */,
+				01BC5B03210EA72D00641D0D /* PNChartLabel.m in Sources */,
+				01BC5B6F210EC01300641D0D /* LCMethod.m in Sources */,
+				01BC5B52210EAD2700641D0D /* WWBarChartItem.m in Sources */,
+				01BC5B0F210EA72D00641D0D /* PNScatterChartData.m in Sources */,
+				01BC5B5B210EAD2700641D0D /* NSString+DecimalNumber.m in Sources */,
+				01BC5B58210EAD2700641D0D /* UIImage+Extension.m in Sources */,
+				01BC5B51210EAD2700641D0D /* WWBarScrollView.m in Sources */,
+				01BC5B11210EA72D00641D0D /* PNScatterChart.m in Sources */,
+				01BC5B05210EA72D00641D0D /* PNRadarChartDataItem.m in Sources */,
+				01BC5B6E210EC01300641D0D /* LCArcView.m in Sources */,
+				01BC5B73210EC0F100641D0D /* UIView+LCLayout.m in Sources */,
+				01BC5ACD210EA69200641D0D /* ViewController.m in Sources */,
+				01BC5B0A210EA72D00641D0D /* PNLineChartData.m in Sources */,
+				01BC5B54210EAD2700641D0D /* WWBarXAxisItem.m in Sources */,
+				01BC5AD8210EA69200641D0D /* main.m in Sources */,
+				01BC5B4A210EAD2700641D0D /* WWLineXAxisView.m in Sources */,
+				01BC5B4D210EAD2700641D0D /* WWPieCHartLayer.m in Sources */,
+				01BC5B6C210EC01300641D0D /* LCPieViewModel.m in Sources */,
+				01BC5B02210EA72D00641D0D /* PNPieChartDataItem.m in Sources */,
+				01BC5B4F210EAD2700641D0D /* WWPieChartView.m in Sources */,
+				01BC5B04210EA72D00641D0D /* PNScatterChartDataItem.m in Sources */,
+				01BC5B6D210EC01300641D0D /* LCChartViewModel.m in Sources */,
+				01BC5B1A210EA8A200641D0D /* UICountingLabel.m in Sources */,
+				01BC5B07210EA72D00641D0D /* PNBarChart.m in Sources */,
+				01BC5B57210EAD2700641D0D /* WWChartBackGroundView.m in Sources */,
+				01BC5B4B210EAD2700641D0D /* WWLineYAxisItem.m in Sources */,
+				01BC5B55210EAD2700641D0D /* WWXAxisView.m in Sources */,
+				01BC5B56210EAD2700641D0D /* WWChartEntity.m in Sources */,
+				01BC5ACA210EA69200641D0D /* AppDelegate.m in Sources */,
+				01BC5B59210EAD2700641D0D /* WWTool.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		01BC5ACE210EA69200641D0D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01BC5ACF210EA69200641D0D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		01BC5AD3210EA69200641D0D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01BC5AD4210EA69200641D0D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		01BC5AD9210EA69200641D0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		01BC5ADA210EA69200641D0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		01BC5ADC210EA69200641D0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P956ZH87BE;
+				INFOPLIST_FILE = LGChartsDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.WYTest.LGChartsDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		01BC5ADD210EA69200641D0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P956ZH87BE;
+				INFOPLIST_FILE = LGChartsDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.WYTest.LGChartsDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01BC5AC0210EA69200641D0D /* Build configuration list for PBXProject "LGChartsDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01BC5AD9210EA69200641D0D /* Debug */,
+				01BC5ADA210EA69200641D0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01BC5ADB210EA69200641D0D /* Build configuration list for PBXNativeTarget "LGChartsDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01BC5ADC210EA69200641D0D /* Debug */,
+				01BC5ADD210EA69200641D0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 01BC5ABD210EA69200641D0D /* Project object */;
+}
