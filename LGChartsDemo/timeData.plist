@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>date</key>
+		<string>2018-07-16</string>
+		<key>sit_time</key>
+		<string>25</string>
+		<key>start_time</key>
+		<string>06:28</string>
+	</dict>
+	<dict>
+		<key>date</key>
+		<string>2018-07-16</string>
+		<key>sit_time</key>
+		<string>25</string>
+		<key>start_time</key>
+		<string>07:28</string>
+	</dict>
+	<dict>
+		<key>date</key>
+		<string>2018-07-16</string>
+		<key>sit_time</key>
+		<string>60</string>
+		<key>start_time</key>
+		<string>08:05</string>
+	</dict>
+	<dict>
+		<key>date</key>
+		<string>2018-07-16</string>
+		<key>sit_time</key>
+		<string>240</string>
+		<key>start_time</key>
+		<string>09:06</string>
+	</dict>
+	<dict>
+		<key>date</key>
+		<string>2018-07-16</string>
+		<key>sit_time</key>
+		<string>15</string>
+		<key>start_time</key>
+		<string>14:00</string>
+	</dict>
+	<dict>
+		<key>date</key>
+		<string>2018-07-16</string>
+		<key>sit_time</key>
+		<string>55</string>
+		<key>start_time</key>
+		<string>16:28</string>
+	</dict>
+	<dict>
+		<key>date</key>
+		<string>2018-07-16</string>
+		<key>sit_time</key>
+		<string>180</string>
+		<key>start_time</key>
+		<string>21:00</string>
+	</dict>
+</array>
+</plist>

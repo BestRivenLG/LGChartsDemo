@@ -10,12 +10,15 @@
 #import "PNChart.h"
 #import "WWBarView.h"
 #import "LCChartView.h"
+#import "LGTodayStateModel.h"
+#import "MJExtension.h"
 #define RandomColor [UIColor colorWithRed:arc4random_uniform(255)/255.0 green:arc4random_uniform(255)/255.0 blue:arc4random_uniform(255)/255.0 alpha:1]
 @interface ViewController ()<PNChartDelegate>
 @property (nonatomic) PNBarChart * barChart;
 @property (nonatomic,strong) UIView * bgView;
 @property (nonatomic,strong) UIView *bgView2;
 @property (strong, nonatomic) LCChartView *chartViewLine;
+@property (nonatomic,copy)NSArray *dataArr;
 
 @end
 
@@ -23,12 +26,54 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
     
 //    [self initUI];
     [self initUI3];
-    [self initUI2];
+//    [self initUI2];
 
+}
+-(NSArray *)dataArr{
+    if (_dataArr == nil) {
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"timeData.plist" ofType:nil];
+        NSArray *arr = [NSArray arrayWithContentsOfFile:path];
+        _dataArr = [NSArray arrayWithArray:[LGTodayStateModel mj_objectArrayWithKeyValuesArray:arr]];
+    }
+    return _dataArr;
+}
+
+- (IBAction)clickAction1:(id)sender {
+    [self showData];
+}
+
+- (IBAction)clickAction2:(id)sender {
+    [self showData2];
+}
+
+
+- (void)showData2{
+
+    LCChartViewModel *model = [LCChartViewModel modelWithColor:[UIColor redColor] plots:[self randomArrayWithCount:24] project:@"1组"];
+    LCChartViewModel *model1 = [LCChartViewModel modelWithColor:RandomColor plots:[self randomArrayWithCount:24] project:@"2组"];
+    LCChartViewModel *model2 = [LCChartViewModel modelWithColor:RandomColor plots:[self randomArrayWithCount:24] project:@"3组"];
+    LCChartViewModel *model3 = [LCChartViewModel modelWithColor:RandomColor plots:[self randomArrayWithCount:24] project:@"4组"];
+    LCChartViewModel *model4 = [LCChartViewModel modelWithColor:RandomColor plots:[self randomArrayWithCount:24] project:@"5组"];
+    
+    _chartViewLine.xAxisTitleArray = @[@"1", @"2", @"3", @"4", @"5", @"6", @"7", @"8" , @"9", @"10", @"11", @"12",@"13",@"14",@"15",@"16",@"17",@"18",@"19",@"20",@"21",@"22",@"23",@"24"];//@[@"1", @"2", @"3", @"4", @"5", @"6", @"7", @"8" , @"9", @"10", @"11", @"12"]
+    [self.chartViewLine showChartViewWithYAxisMaxValue:180 dataSource:@[model,model1,model2,model3,model4] danwei:@"(单位/min)"];
+}
+
+- (void)showData{
+   
+    _chartViewLine.xAxisTitleArray = @[@"1", @"2", @"3", @"4", @"5", @"6", @"7", @"8" , @"9", @"10", @"11", @"12",@"13",@"14",@"15",@"16",@"17",@"18",@"19",@"20",@"21",@"22",@"23",@"24"];
+    
+    LCChartViewModel *model = [LCChartViewModel modelWithColor:[UIColor redColor] plotsModelArr:self.dataArr project:@"1组"];
+    
+    NSMutableArray *arr = [self.dataArr mutableArrayValueForKeyPath:@"sit_time"];
+    CGFloat maxValue = [[arr valueForKeyPath:@"@max.floatValue"] floatValue];
+    
+    [self.chartViewLine showOtherChartViewWithYAxisMaxValue:maxValue dataSource:@[model] danwei:@"(单位/min)"];
+    
 }
 
 - (NSArray *)randomArrayWithCount:(NSInteger)dataCounts {
@@ -39,27 +84,19 @@
     }
     return array.copy;
 }
+
 -(void)initUI3
 {
     CGSize size = [UIScreen mainScreen].bounds.size;
-    UIView *bgView = [[UIView alloc] initWithFrame:CGRectMake(0, 80, size.width, 300)];
-    bgView.backgroundColor = [UIColor yellowColor];
+    UIView *bgView = [[UIView alloc] initWithFrame:CGRectMake(0, 150, size.width, 300)];
+//    bgView.backgroundColor = [UIColor yellowColor];
     [self.view addSubview:bgView];
     self.bgView = bgView;
     
-    LCChartViewModel *model = [LCChartViewModel modelWithColor:[UIColor redColor] plots:[self randomArrayWithCount:24] project:@"1组"];
-    LCChartViewModel *model1 = [LCChartViewModel modelWithColor:RandomColor plots:[self randomArrayWithCount:24] project:@"2组"];
-    LCChartViewModel *model2 = [LCChartViewModel modelWithColor:RandomColor plots:[self randomArrayWithCount:24] project:@"3组"];
-    LCChartViewModel *model3 = [LCChartViewModel modelWithColor:RandomColor plots:[self randomArrayWithCount:24] project:@"4组"];
-    LCChartViewModel *model4 = [LCChartViewModel modelWithColor:RandomColor plots:[self randomArrayWithCount:24] project:@"5组"];
-    
     _chartViewLine = [LCChartView chartViewWithType:LCChartViewTypeBar];
     _chartViewLine.frame = CGRectMake(0, 0, size.width, 300);
+    _chartViewLine.backColor = [UIColor colorWithRed:31/255.0 green:31/255.0 blue:32/255.0 alpha:1.0];
     [self.bgView addSubview:_chartViewLine];
-    _chartViewLine.xAxisTitleArray = @[@"1", @"2", @"3", @"4", @"5", @"6", @"7", @"8" , @"9", @"10", @"11", @"12",@"13",@"14",@"15",@"16",@"17",@"18",@"19",@"20",@"21",@"22",@"23",@"24"];//@[@"1", @"2", @"3", @"4", @"5", @"6", @"7", @"8" , @"9", @"10", @"11", @"12"]
-    [self.chartViewLine showChartViewWithYAxisMaxValue:180 dataSource:@[model,model1,model2,model3,model4] danwei:@"(单位/min)"];
-    
-//    self.chartViewLine.backgroundColor = [UIColor yellowColor];
 }
 
 -(void)initUI2 {
@@ -68,9 +105,7 @@
     bgView2.backgroundColor = [UIColor yellowColor];
     [self.view addSubview:bgView2];
     self.bgView2 = bgView2;
-    
     [self unEnableScrollWithCustomXAxisValue];
-
 }
 
 - (void)unEnableScrollWithCustomXAxisValue
