@@ -36,6 +36,12 @@ static CGFloat noteViewRowH = 15;
 
 @property (strong, nonatomic) NSArray<LCChartViewModel *> *dataOtherSource;
 
+@property (assign, nonatomic) BOOL isLianxu;
+//捏合时 记录放大缩小bar的宽度间距变量属性记录
+@property (assign, nonatomic) CGFloat midBarWidth;
+@property (assign, nonatomic) CGFloat originBarWidth;
+@property (assign, nonatomic) CGFloat midBarMargin;
+@property (assign, nonatomic) CGFloat originBarMargin;
 
 /** 捏合时记录原先X轴点距离 */
 @property (assign, nonatomic) CGFloat orginXAxisMargin;
@@ -89,6 +95,8 @@ static CGFloat noteViewRowH = 15;
 - (void)showChartViewWithYAxisMaxValue:(CGFloat)yAxisMaxValue dataSource:(NSArray<LCChartViewModel *> *)dataSource {
     _yAxisMaxValue = yAxisMaxValue;
     self.dataSource = dataSource;
+    _barWidth = _originBarWidth = _midBarWidth = 15;
+    _isLianxu = NO;
     [self showChartView];
 }
 
@@ -100,6 +108,12 @@ static CGFloat noteViewRowH = 15;
 //    if (yAxisMaxValue>16) {
 //        _yTextToAxis = _yAxisCount = _plotsButtonWH = yAxisMaxValue/2;//5;
 //    }
+//    _barWidth = 15;
+    _barWidth = _originBarWidth = _midBarWidth = 15;
+
+    _barMargin = 20;
+    _xAxisTextMargin = _orginXAxisMargin = _xArrowsToText = 30;
+    _isLianxu = NO;
     [self showChartView];
 }
 
@@ -108,7 +122,10 @@ static CGFloat noteViewRowH = 15;
     self.dataOtherSource = dataSource;
     self.labelDWString = danwei;
     _yTextToAxis = _yAxisCount = _plotsButtonWH = 6;//5;
-
+    _barWidth = _originBarWidth = _midBarWidth = 18;
+    _barMargin = _originBarMargin = _midBarMargin = 0;
+    _xAxisTextMargin = _orginXAxisMargin = _xArrowsToText = 0;
+    _isLianxu = YES;
     [self showOtherChartView];
 }
 
@@ -143,9 +160,9 @@ static CGFloat noteViewRowH = 15;
 }
 
 - (void)showChartView {
-    _barWidth = 15;
-    _barMargin = 20;
-    _xAxisTextMargin = _orginXAxisMargin = _xArrowsToText = 30;
+//    _barWidth = 15;
+//    _barMargin = 20;
+//    _xAxisTextMargin = _orginXAxisMargin = _xArrowsToText = 30;
 
     if (self.dataSource.count == 0) {
         NSLog(@"请设置展示的点数据");
@@ -181,9 +198,9 @@ static CGFloat noteViewRowH = 15;
 
 
 - (void)showOtherChartView {
-    _barWidth = 18;
-    _barMargin = 0;
-    _xAxisTextMargin = _orginXAxisMargin = _xArrowsToText = 0;
+//    _barWidth = 18;
+//    _barMargin = 0;
+//    _xAxisTextMargin = _orginXAxisMargin = _xArrowsToText = 0;
 
     if (self.dataOtherSource.count == 0) {
         NSLog(@"请设置展示的点数据");
@@ -994,17 +1011,26 @@ static CGFloat noteViewRowH = 15;
             break;
         case UIGestureRecognizerStateChanged:{
             _xAxisTextMargin = recognizer.scale * self.orginXAxisMargin;
-            if (self.chartViewType == LCChartViewTypeLine) {
-                if (_xAxisTextMargin < 10) {
-                    _xAxisTextMargin = 10;
-                }
+
+            
+            _barWidth = recognizer.scale*self.midBarWidth;
+            if (_barWidth < self.originBarWidth) {
+                _barWidth = self.originBarWidth;
             }
-            [self showChartView];
+            if (_isLianxu) {
+                
+                [self showOtherChartView];
+            }else {
+                [self showChartView];
+            }
         }
             break;
         case UIGestureRecognizerStateEnded:{
             self.orginXAxisMargin = _xAxisTextMargin;
             self.showAnimation = self.orginAnimation;
+//            if (_isLianxu) {
+                self.midBarWidth = _barWidth;
+//            }
         }
             break;
             

@@ -30,6 +30,8 @@
     
 //    [self initUI];
     [self initUI3];
+
+
 //    [self initUI2];
 
 }
